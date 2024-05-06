@@ -1,0 +1,78 @@
+/* media queries*/
+
+
+
+@media (max-width:768px) {
+    /* encabezado */
+ .encabezado__subtitulo{
+     display: none;
+ }
+ /* index */
+ .partidos__texto{
+     display: none;
+ }
+ /* Indumentaria */
+ .catalogo__muestras{
+     display: none;
+ }
+
+ .grid-contenedor{ /* sponsors */
+
+     grid-template-columns: 0.5fr 0.5fr;
+     grid-template-rows: 0.2fr 1fr 0.2fr;
+     grid-template-areas: 
+     "encabezado encabezado"
+     "sponsors   sponsors"
+     "pie        pie"
+     ;
+ }
+ /* footer */
+ .pie__redes a img{
+     width: 40px;
+ }
+ .pie__logos img{
+     display: flex;
+     align-content: space-around;
+     height: 70px;
+ }
+}
+
+@media (max-width:576px) {
+ /* encabezado */
+ .encabezado__subtitulo{ 
+     display: none; /* lo borro porque no da el lugar */
+ }
+ /* index */
+ .partidos img{
+     width: 20%;
+     display: flex;
+ }
+ /* Indumentaria */
+ .catalogo__muestras{
+     display: none;
+ }
+
+
+     /* sponsors */
+
+ .grid-contenedor{
+
+     grid-template-columns: 1fr;
+     grid-template-rows: 0.2fr 1fr 0.2fr;
+     grid-template-areas: 
+     "encabezado"
+     "sponsors"
+     "pie"
+     ;
+ }
+
+/* footer */
+     .pie__redes a img{
+         width: 40px;
+     }
+     .pie__logos img{
+         display: flex;
+         align-content: space-around;
+         height: 70px;
+ }
+}

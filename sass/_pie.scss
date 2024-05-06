@@ -1,0 +1,44 @@
+/*footer*/
+pie{
+    background-image: url('../imagenes/fondos/rastafriki.jpg');
+    background-repeat: initial;
+    __subtitulo{
+        text-align: center;
+        background-color: #2ed32e;
+     
+    }
+    __subtitulo{
+        text-align: center;
+        background-color: #2ed32e;
+    
+    }
+    a{
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+        img{
+            text-align: center;
+            width: 100px;
+            height: auto;
+        }
+    }
+    redes{
+        display: flex;
+        align-content: space-around;
+        a{
+            img{
+                width: 300px;
+            }
+        }
+    }
+    _logos{
+        display: flex; /*deberia derle el display al padre de todos o lo dejo en estas 2 secciones*/
+        align-content: space-around;
+        img{
+            display: inline-block;
+            margin: auto;
+            justify-content: space-between;
+            height: 200px;
+        }
+    }
+}

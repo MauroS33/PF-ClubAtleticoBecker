@@ -1,0 +1,194 @@
+.principal{
+    display: flex;
+    &__foto{
+        width: 100%;
+    }
+    &__titulo{
+        justify-content: center;
+    }
+    &__texto{
+        justify-content: center;
+    }
+}
+
+/*aside home*/
+.partidos{
+    display: flex;
+    &__titulo{
+        justify-content: center;
+    }
+    img{
+        width: 200px;
+        height: auto;
+        display: flex;
+    }
+}
+
+/*section home*/
+
+
+.goleadores{
+    display: flex;
+    text-align: center; /* Para centrar el texto y las imágenes dentro del contenedor */
+    __imagen{
+        display: block; /* Cambiado a display block */
+        margin: 0 auto; /* Centrar horizontalmente */
+        max-width: 100%; /* Para asegurarse de que la imagen no exceda su contenedor */
+    }
+    __titulo{
+        justify-content: center;
+    }
+    __subtitulo{
+        justify-content: center;
+    }
+    __puestos{
+        justify-content: center; /* Centrar horizontalmente los contenedores de puestos */
+        margin-top: 20px; /* Espacio superior para separar del contenido superior */    
+        
+        img{
+            max-width: 100%; /* Para asegurarse de que las imágenes no excedan su contenedor */
+            height: auto; /* Mantener la proporción de aspecto */
+        
+        }
+        -item{
+            margin: 0 10px; /* Espacio horizontal entre los contenedores de puestos */
+            max-width: 100%; /* Para asegurarse de que los contenedores no excedan su contenedor padre */
+            text-align: center; /* Centrar el contenido dentro de los contenedores */
+            display: inline-block; /* Cambiado a inline-block para que los contenedores se ajusten al contenido */
+        
+        }
+    }
+
+}
+
+
+/*main galery*/
+//main galery
+.galery{
+    display:flexbox;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+        a{
+            img{
+                display: inline-block;
+                justify-content: center;
+                height: 220px;
+                border-radius: 5%;
+                box-shadow: 5px 12px 18px black;
+                margin: 20px;  
+            }
+        }
+}
+/* Estilo para el carrusel */
+
+.carousel-inner{
+    width: 100%; /* Hacer que el carrusel ocupe todo el ancho disponible */
+    img{
+        width: 100%; /* Hacer que las imágenes ocupen todo el ancho del carrusel */
+        height: auto; /* Mantener la proporción de aspecto */
+    
+    }
+}
+
+/*main indumentaria*/
+.catalogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    __juego{
+        margin-bottom: 20px; /* Espaciado entre cada sección de galería */
+        __galerias{
+            display: inline-block;
+            width: auto; /* Hacer que las imágenes ocupen todo el ancho disponible */
+            max-height: 220px;
+            img{
+                display: inline-block;
+                width: auto;
+                max-height: 250px; /* Mantener la proporción de aspecto */
+            }
+        }
+    }
+    __entreno{
+        margin-bottom: 20px; /* Espaciado entre cada sección de galería */
+        __galerias{
+            display: inline-block;
+            width: auto; /* Hacer que las imágenes ocupen todo el ancho disponible */
+            max-height: 220px;
+            img{
+                display: inline-block;
+                width: auto;
+                max-height: 250px; /* Mantener la proporción de aspecto */
+            }
+        }
+    }
+    __social{
+        margin-bottom: 20px; /* Espaciado entre cada sección de galería */
+        __galerias{
+            display: inline-block;
+            width: auto; /* Hacer que las imágenes ocupen todo el ancho disponible */
+            max-height: 220px;
+            img{
+                display: inline-block;
+                width: auto;
+                max-height: 250px; /* Mantener la proporción de aspecto */
+            }
+        }
+    }
+    __muestras{
+        justify-content: center;
+        text-align: center;
+
+        img{
+            flex-wrap:wrap ;
+            height: 220px;
+            border-radius: 5%;
+            box-shadow: 5px 12px 18px black;
+            margin: 20px;
+        }
+    }
+}
+
+/*main sponsors*/
+
+
+.grid-contenedor{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: auto 0.2fr auto;
+    grid-template-areas: 
+    "encabezado encabezado encabezado encabezado"
+    "sponsors   sponsors   sponsors   sponsors"
+    "pie        pie        pie        pie"
+    ;
+}
+.encabezado{
+    grid-area: encabezado;
+}
+.sponsors{
+    grid-area: sponsors;
+    
+}
+.pie{
+    grid-area: pie;
+}
+.sponsors{
+    display: flex; /* no puedo lograr que las imagenes ocupen todas las columnas*/
+    img{
+        height: 220px;
+        border-radius: 5%;
+        box-shadow: 5px 12px 18px black;
+        grid-column: span 4; /* Las imágenes ocuparán todas las 4 columnas */
+    }
+}
+.sponsors 
+/*main inscribirse*/
+.tabla{
+     tr{
+        th{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+    }
+}
