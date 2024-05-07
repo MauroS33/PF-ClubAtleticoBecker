@@ -134,15 +134,16 @@ body{
 }
 /* Estilo para el carrusel */
 
-
-.carousel-inner img {
-    width: 100%; /* Hacer que las imágenes ocupen todo el ancho del carrusel */
-    height: auto; /* Mantener la proporción de aspecto */
-}
-
 /* Ajuste para el carrusel de Bootstrap */
-.carousel {
-    width: 100%; /* Hacer que el carrusel ocupe todo el ancho disponible */
+.carousel-contenedor {
+    display: flex;
+    margin: 1%;
+    padding: 1%;
+    width: 99%; /* Hacer que el carrusel ocupe todo el ancho disponible */
+}
+.carousel-inner img {
+    width: 99%; /* Hacer que las imágenes ocupen todo el ancho del carrusel */
+    height: auto; /* Mantener la proporción de aspecto */
 }
 
 /* Estilo para las secciones de galería */
@@ -193,6 +194,7 @@ body{
 
 
 /*main sponsors*/
+
 .grid-contenedor{
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
@@ -210,14 +212,12 @@ body{
     grid-area: sponsors;
     
 }
-
 .pie{
     grid-area: pie;
 }
 
 .sponsors img{
-    display: flex; /* no puedo lograr que las imagenes ocupen todas las columnas*/
-    height: 220px;
+    width: 40%;
     border-radius: 5%;
     box-shadow: 5px 12px 18px black;
     grid-column: span 4; /* Las imágenes ocuparán todas las 4 columnas */

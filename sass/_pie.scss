@@ -1,13 +1,13 @@
 /*footer*/
-pie{
+.pie{
     background-image: url('../imagenes/fondos/rastafriki.jpg');
     background-repeat: initial;
-    __subtitulo{
+    &__subtitulo{
         text-align: center;
         background-color: #2ed32e;
      
     }
-    __subtitulo{
+    &__subtitulo{
         text-align: center;
         background-color: #2ed32e;
     
@@ -22,7 +22,7 @@ pie{
             height: auto;
         }
     }
-    redes{
+    &redes{
         display: flex;
         align-content: space-around;
         a{
@@ -31,7 +31,7 @@ pie{
             }
         }
     }
-    _logos{
+    &_logos{
         display: flex; /*deberia derle el display al padre de todos o lo dejo en estas 2 secciones*/
         align-content: space-around;
         img{

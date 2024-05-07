@@ -30,18 +30,18 @@
 .goleadores{
     display: flex;
     text-align: center; /* Para centrar el texto y las imágenes dentro del contenedor */
-    __imagen{
+    &__imagen{
         display: block; /* Cambiado a display block */
         margin: 0 auto; /* Centrar horizontalmente */
         max-width: 100%; /* Para asegurarse de que la imagen no exceda su contenedor */
     }
-    __titulo{
+    &__titulo{
         justify-content: center;
     }
-    __subtitulo{
+    &__subtitulo{
         justify-content: center;
     }
-    __puestos{
+    &__puestos{
         justify-content: center; /* Centrar horizontalmente los contenedores de puestos */
         margin-top: 20px; /* Espacio superior para separar del contenido superior */    
         
@@ -50,7 +50,7 @@
             height: auto; /* Mantener la proporción de aspecto */
         
         }
-        -item{
+        &-item{
             margin: 0 10px; /* Espacio horizontal entre los contenedores de puestos */
             max-width: 100%; /* Para asegurarse de que los contenedores no excedan su contenedor padre */
             text-align: center; /* Centrar el contenido dentro de los contenedores */
@@ -80,24 +80,24 @@
         }
 }
 /* Estilo para el carrusel */
-
-.carousel-inner{
-    width: 100%; /* Hacer que el carrusel ocupe todo el ancho disponible */
-    img{
-        width: 100%; /* Hacer que las imágenes ocupen todo el ancho del carrusel */
-        height: auto; /* Mantener la proporción de aspecto */
-    
+.carrusel-contenedor{
+    display: flex;
+    &carousel-inner{
+        width: 99%; /* Hacer que el carrusel ocupe todo el ancho disponible */
+        img{
+            width: 99%; /* Hacer que las imágenes ocupen todo el ancho del carrusel */
+            height: auto; /* Mantener la proporción de aspecto */
+        }
     }
 }
-
 /*main indumentaria*/
 .catalogo{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    __juego{
+    &__juego{
         margin-bottom: 20px; /* Espaciado entre cada sección de galería */
-        __galerias{
+        &__galerias{
             display: inline-block;
             width: auto; /* Hacer que las imágenes ocupen todo el ancho disponible */
             max-height: 220px;
@@ -108,9 +108,9 @@
             }
         }
     }
-    __entreno{
+    &__entreno{
         margin-bottom: 20px; /* Espaciado entre cada sección de galería */
-        __galerias{
+        &__galerias{
             display: inline-block;
             width: auto; /* Hacer que las imágenes ocupen todo el ancho disponible */
             max-height: 220px;
@@ -121,9 +121,9 @@
             }
         }
     }
-    __social{
+    &__social{
         margin-bottom: 20px; /* Espaciado entre cada sección de galería */
-        __galerias{
+        &__galerias{
             display: inline-block;
             width: auto; /* Hacer que las imágenes ocupen todo el ancho disponible */
             max-height: 220px;
@@ -134,10 +134,9 @@
             }
         }
     }
-    __muestras{
+    &__muestras{
         justify-content: center;
         text-align: center;
-
         img{
             flex-wrap:wrap ;
             height: 220px;

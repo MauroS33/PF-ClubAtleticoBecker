@@ -6,39 +6,39 @@
 }
 
 /* Estilo para el header */
-encabezado {
+.encabezado {
   display: flex; /* Usamos flexbox para controlar la disposición de los elementos internos */
   align-items: center; /* Centramos verticalmente los elementos */
   background-image: url("../imagenes/fondos/rastafriki.jpg");
   background-repeat: initial;
   padding: 10px; /* Añadimos un poco de espacio alrededor de los elementos */
 }
-encabezado __logo {
+.encabezado__logo {
   width: 200px;
 }
-encabezado __logo __titulo {
+.encabezado__logo__titulo {
   color: #ffffff;
   flex-grow: 1; /* Permite que el título h1 ocupe todo el espacio restante */
   text-align: center; /* Centra el texto horizontalmente */
 }
-encabezado __logo __titulo __subtitulo {
+.encabezado__logo__titulo__subtitulo {
   color: #ffffff;
 }
 
 /* Estilo para la navegación */
-navegacion __lista {
+.navegacion__lista {
   margin-top: auto; /* Mueve la navegación hacia abajo */
 }
-navegacion __lista li {
+.navegacion__lista li {
   display: block; /* Cambiamos a bloque para que cada elemento esté en una línea */
   margin-bottom: 10px; /* Añadimos un poco de espacio entre los elementos */
 }
-navegacion __lista a {
+.navegacion__lista a {
   color: #ffffff;
   padding: 10px;
   text-decoration: none; /* Quitamos el subrayado del enlace */
 }
-navegacion __lista a a:hover {
+.navegacion__lista a a:hover {
   color: #ff0000; /* Cambia el color al pasar el cursor sobre el enlace */
 }
 
@@ -73,26 +73,26 @@ navegacion __lista a a:hover {
   display: flex;
   text-align: center; /* Para centrar el texto y las imágenes dentro del contenedor */
 }
-.goleadores __imagen {
+.goleadores__imagen {
   display: block; /* Cambiado a display block */
   margin: 0 auto; /* Centrar horizontalmente */
   max-width: 100%; /* Para asegurarse de que la imagen no exceda su contenedor */
 }
-.goleadores __titulo {
+.goleadores__titulo {
   justify-content: center;
 }
-.goleadores __subtitulo {
+.goleadores__subtitulo {
   justify-content: center;
 }
-.goleadores __puestos {
+.goleadores__puestos {
   justify-content: center; /* Centrar horizontalmente los contenedores de puestos */
   margin-top: 20px; /* Espacio superior para separar del contenido superior */
 }
-.goleadores __puestos img {
+.goleadores__puestos img {
   max-width: 100%; /* Para asegurarse de que las imágenes no excedan su contenedor */
   height: auto; /* Mantener la proporción de aspecto */
 }
-.goleadores __puestos -item {
+.goleadores__puestos-item {
   margin: 0 10px; /* Espacio horizontal entre los contenedores de puestos */
   max-width: 100%; /* Para asegurarse de que los contenedores no excedan su contenedor padre */
   text-align: center; /* Centrar el contenido dentro de los contenedores */
@@ -115,11 +115,14 @@ navegacion __lista a a:hover {
 }
 
 /* Estilo para el carrusel */
-.carousel-inner {
-  width: 100%; /* Hacer que el carrusel ocupe todo el ancho disponible */
+.carrusel-contenedor {
+  display: flex;
 }
-.carousel-inner img {
-  width: 100%; /* Hacer que las imágenes ocupen todo el ancho del carrusel */
+.carrusel-contenedorcarousel-inner {
+  width: 99%; /* Hacer que el carrusel ocupe todo el ancho disponible */
+}
+.carrusel-contenedorcarousel-inner img {
+  width: 99%; /* Hacer que las imágenes ocupen todo el ancho del carrusel */
   height: auto; /* Mantener la proporción de aspecto */
 }
 
@@ -129,50 +132,50 @@ navegacion __lista a a:hover {
   flex-direction: column;
   justify-content: center;
 }
-.catalogo __juego {
+.catalogo__juego {
   margin-bottom: 20px; /* Espaciado entre cada sección de galería */
 }
-.catalogo __juego __galerias {
+.catalogo__juego__galerias {
   display: inline-block;
   width: auto; /* Hacer que las imágenes ocupen todo el ancho disponible */
   max-height: 220px;
 }
-.catalogo __juego __galerias img {
+.catalogo__juego__galerias img {
   display: inline-block;
   width: auto;
   max-height: 250px; /* Mantener la proporción de aspecto */
 }
-.catalogo __entreno {
+.catalogo__entreno {
   margin-bottom: 20px; /* Espaciado entre cada sección de galería */
 }
-.catalogo __entreno __galerias {
+.catalogo__entreno__galerias {
   display: inline-block;
   width: auto; /* Hacer que las imágenes ocupen todo el ancho disponible */
   max-height: 220px;
 }
-.catalogo __entreno __galerias img {
+.catalogo__entreno__galerias img {
   display: inline-block;
   width: auto;
   max-height: 250px; /* Mantener la proporción de aspecto */
 }
-.catalogo __social {
+.catalogo__social {
   margin-bottom: 20px; /* Espaciado entre cada sección de galería */
 }
-.catalogo __social __galerias {
+.catalogo__social__galerias {
   display: inline-block;
   width: auto; /* Hacer que las imágenes ocupen todo el ancho disponible */
   max-height: 220px;
 }
-.catalogo __social __galerias img {
+.catalogo__social__galerias img {
   display: inline-block;
   width: auto;
   max-height: 250px; /* Mantener la proporción de aspecto */
 }
-.catalogo __muestras {
+.catalogo__muestras {
   justify-content: center;
   text-align: center;
 }
-.catalogo __muestras img {
+.catalogo__muestras img {
   flex-wrap: wrap;
   height: 220px;
   border-radius: 5%;
@@ -218,40 +221,40 @@ navegacion __lista a a:hover {
 }
 
 /*footer*/
-pie {
+.pie {
   background-image: url("../imagenes/fondos/rastafriki.jpg");
   background-repeat: initial;
 }
-pie __subtitulo {
+.pie__subtitulo {
   text-align: center;
   background-color: #2ed32e;
 }
-pie __subtitulo {
+.pie__subtitulo {
   text-align: center;
   background-color: #2ed32e;
 }
-pie a {
+.pie a {
   display: inline-block;
   text-align: center;
   margin: auto;
 }
-pie a img {
+.pie a img {
   text-align: center;
   width: 100px;
   height: auto;
 }
-pie redes {
+.pieredes {
   display: flex;
   align-content: space-around;
 }
-pie redes a img {
+.pieredes a img {
   width: 300px;
 }
-pie _logos {
+.pie_logos {
   display: flex; /*deberia derle el display al padre de todos o lo dejo en estas 2 secciones*/
   align-content: space-around;
 }
-pie _logos img {
+.pie_logos img {
   display: inline-block;
   margin: auto;
   justify-content: space-between;
