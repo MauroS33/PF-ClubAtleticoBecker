@@ -7,7 +7,7 @@
         background-color: #2ed32e;
      
     }
-    &__subtitulo{
+    &__texto{
         text-align: center;
         background-color: #2ed32e;
     
@@ -18,27 +18,26 @@
         margin: auto;
         img{
             text-align: center;
-            width: 100px;
-            height: auto;
+            @include aire (none, none, 100px, auto);
         }
     }
-    &redes{
+    &__redes{
         display: flex;
         align-content: space-around;
         a{
             img{
-                width: 300px;
+                width: 100px;
             }
         }
     }
-    &_logos{
+    &__logos{
         display: flex; /*deberia derle el display al padre de todos o lo dejo en estas 2 secciones*/
         align-content: space-around;
         img{
             display: inline-block;
-            margin: auto;
             justify-content: space-between;
-            height: 200px;
+            margin: auto;
+            height: 210px;
         }
     }
 }

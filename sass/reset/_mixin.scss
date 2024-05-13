@@ -1,0 +1,15 @@
+// Mixin sin parametros
+
+@mixin flex-jcc{
+    display: flex;
+    justify-content: center;
+}
+
+//Mixin con parametros
+
+@mixin aire ($p, $m, $w, $h){
+    padding: $p;
+    margin: $m;
+    width: $w;
+    height: $h;
+}

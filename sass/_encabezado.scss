@@ -1,39 +1,40 @@
 /* Estilo para el header */
-.encabezado{
-    display: flex; /* Usamos flexbox para controlar la disposición de los elementos internos */
-    align-items: center; /* Centramos verticalmente los elementos */
+.encabezado {
+    display: flex;
+    align-items: center;
     background-image: url('../imagenes/fondos/rastafriki.jpg');
     background-repeat: initial;
-    padding: 10px; /* Añadimos un poco de espacio alrededor de los elementos */
-        &__logo{
+    padding: 10px;
+
+    &__logo {
         width: 200px;
-        &__titulo{
+    }
+
+    &__titulo {
         color: #ffffff;
-        flex-grow: 1; /* Permite que el título h1 ocupe todo el espacio restante */
-        text-align: center; /* Centra el texto horizontalmente */
-        &__subtitulo {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    &__subtitulo {
         color: #ffffff;
-    }
-    }
-    }
+    }  
 }
 /* Estilo para la navegación */
-
-.navegacion{
-    &__lista{
+.navegacion {
+    &__lista {
         margin-top: auto; /* Mueve la navegación hacia abajo */
-        li{
+        li {
             display: block; /* Cambiamos a bloque para que cada elemento esté en una línea */
             margin-bottom: 10px; /* Añadimos un poco de espacio entre los elementos */
-          
         }
-        a{
+        a {
             color: #ffffff;
             padding: 10px;
             text-decoration: none; /* Quitamos el subrayado del enlace */
-            a:hover {
-                color: #ff0000; /* Cambia el color al pasar el cursor sobre el enlace */
-            }
+        }
+        a:hover {
+            color: #ff0000; /* Cambia el color al pasar el cursor sobre el enlace */
         }
     }
 }

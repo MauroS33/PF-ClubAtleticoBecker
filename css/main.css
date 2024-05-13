@@ -7,21 +7,21 @@
 
 /* Estilo para el header */
 .encabezado {
-  display: flex; /* Usamos flexbox para controlar la disposición de los elementos internos */
-  align-items: center; /* Centramos verticalmente los elementos */
+  display: flex;
+  align-items: center;
   background-image: url("../imagenes/fondos/rastafriki.jpg");
   background-repeat: initial;
-  padding: 10px; /* Añadimos un poco de espacio alrededor de los elementos */
+  padding: 10px;
 }
 .encabezado__logo {
   width: 200px;
 }
-.encabezado__logo__titulo {
+.encabezado__titulo {
   color: #ffffff;
-  flex-grow: 1; /* Permite que el título h1 ocupe todo el espacio restante */
-  text-align: center; /* Centra el texto horizontalmente */
+  flex-grow: 1;
+  text-align: center;
 }
-.encabezado__logo__titulo__subtitulo {
+.encabezado__subtitulo {
   color: #ffffff;
 }
 
@@ -38,20 +38,25 @@
   padding: 10px;
   text-decoration: none; /* Quitamos el subrayado del enlace */
 }
-.navegacion__lista a a:hover {
+.navegacion__lista a:hover {
   color: #ff0000; /* Cambia el color al pasar el cursor sobre el enlace */
 }
 
-.principal {
-  display: flex;
+body {
+  background: #1E9600; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .principal__foto {
   width: 100%;
 }
 .principal__titulo {
+  display: flex;
   justify-content: center;
 }
 .principal__texto {
+  display: flex;
   justify-content: center;
 }
 
@@ -60,17 +65,22 @@
   display: flex;
 }
 .partidos__titulo {
+  display: flex;
   justify-content: center;
 }
 .partidos img {
+  padding: none;
+  margin: none;
   width: 200px;
   height: auto;
-  display: flex;
+  width: 200px;
+  height: auto;
 }
 
 /*section home*/
 .goleadores {
   display: flex;
+  flex-direction: column;
   text-align: center; /* Para centrar el texto y las imágenes dentro del contenedor */
 }
 .goleadores__imagen {
@@ -79,13 +89,16 @@
   max-width: 100%; /* Para asegurarse de que la imagen no exceda su contenedor */
 }
 .goleadores__titulo {
+  display: flex;
   justify-content: center;
 }
 .goleadores__subtitulo {
+  display: flex;
   justify-content: center;
 }
 .goleadores__puestos {
-  justify-content: center; /* Centrar horizontalmente los contenedores de puestos */
+  display: flex;
+  justify-content: center;
   margin-top: 20px; /* Espacio superior para separar del contenido superior */
 }
 .goleadores__puestos img {
@@ -101,36 +114,39 @@
 
 /*main galery*/
 .galery {
-  display: flexbox;
-  justify-content: space-evenly;
   align-content: space-evenly;
 }
 .galery a img {
+  padding: none;
+  margin: 20px;
+  width: none;
+  height: 220px;
   display: inline-block;
   justify-content: center;
-  height: 220px;
   border-radius: 5%;
   box-shadow: 5px 12px 18px black;
-  margin: 20px;
 }
 
 /* Estilo para el carrusel */
 .carrusel-contenedor {
   display: flex;
+  flex-direction: column;
 }
 .carrusel-contenedorcarousel-inner {
   width: 99%; /* Hacer que el carrusel ocupe todo el ancho disponible */
 }
 .carrusel-contenedorcarousel-inner img {
-  width: 99%; /* Hacer que las imágenes ocupen todo el ancho del carrusel */
-  height: auto; /* Mantener la proporción de aspecto */
+  padding: none;
+  margin: none;
+  width: 99%;
+  height: auto;
 }
 
 /*main indumentaria*/
 .catalogo {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
 }
 .catalogo__juego {
   margin-bottom: 20px; /* Espaciado entre cada sección de galería */
@@ -138,7 +154,6 @@
 .catalogo__juego__galerias {
   display: inline-block;
   width: auto; /* Hacer que las imágenes ocupen todo el ancho disponible */
-  max-height: 220px;
 }
 .catalogo__juego__galerias img {
   display: inline-block;
@@ -151,7 +166,6 @@
 .catalogo__entreno__galerias {
   display: inline-block;
   width: auto; /* Hacer que las imágenes ocupen todo el ancho disponible */
-  max-height: 220px;
 }
 .catalogo__entreno__galerias img {
   display: inline-block;
@@ -164,7 +178,6 @@
 .catalogo__social__galerias {
   display: inline-block;
   width: auto; /* Hacer que las imágenes ocupen todo el ancho disponible */
-  max-height: 220px;
 }
 .catalogo__social__galerias img {
   display: inline-block;
@@ -172,15 +185,18 @@
   max-height: 250px; /* Mantener la proporción de aspecto */
 }
 .catalogo__muestras {
+  display: flex;
   justify-content: center;
   text-align: center;
 }
 .catalogo__muestras img {
-  flex-wrap: wrap;
+  padding: none;
+  margin: 20px;
+  width: none;
   height: 220px;
+  flex-wrap: wrap;
   border-radius: 5%;
   box-shadow: 5px 12px 18px black;
-  margin: 20px;
 }
 
 /*main sponsors*/
@@ -204,10 +220,11 @@
 }
 
 .sponsors {
-  display: flex; /* no puedo lograr que las imagenes ocupen todas las columnas*/
+  display: flex;
 }
 .sponsors img {
-  height: 220px;
+  width: 200px;
+  height: auto;
   border-radius: 5%;
   box-shadow: 5px 12px 18px black;
   grid-column: span 4; /* Las imágenes ocuparán todas las 4 columnas */
@@ -220,6 +237,13 @@
   border: 1px solid black;
 }
 
+/* inscribirme */
+.inscripciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 /*footer*/
 .pie {
   background-image: url("../imagenes/fondos/rastafriki.jpg");
@@ -229,7 +253,7 @@
   text-align: center;
   background-color: #2ed32e;
 }
-.pie__subtitulo {
+.pie__texto {
   text-align: center;
   background-color: #2ed32e;
 }
@@ -240,25 +264,27 @@
 }
 .pie a img {
   text-align: center;
+  padding: none;
+  margin: none;
   width: 100px;
   height: auto;
 }
-.pieredes {
+.pie__redes {
   display: flex;
   align-content: space-around;
 }
-.pieredes a img {
-  width: 300px;
+.pie__redes a img {
+  width: 100px;
 }
-.pie_logos {
+.pie__logos {
   display: flex; /*deberia derle el display al padre de todos o lo dejo en estas 2 secciones*/
   align-content: space-around;
 }
-.pie_logos img {
+.pie__logos img {
   display: inline-block;
-  margin: auto;
   justify-content: space-between;
-  height: 200px;
+  margin: auto;
+  height: 210px;
 }
 
 /* media queries*/
@@ -279,6 +305,11 @@
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.2fr 1fr 0.2fr;
     grid-template-areas: "encabezado encabezado" "sponsors   sponsors" "pie        pie";
+  }
+  /* inscribirme */
+  .inscripciones {
+    flex-direction: column;
+    align-items: center;
   }
   /* footer */
   .pie__redes a img {
@@ -309,6 +340,11 @@
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 1fr 0.2fr;
     grid-template-areas: "encabezado" "sponsors" "pie";
+  }
+  /* inscribirme */
+  .inscripciones {
+    flex-direction: column;
+    align-items: center;
   }
   /* footer */
   .pie__redes a img {

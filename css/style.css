@@ -51,7 +51,10 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ff0000; /* Cambia el color al pasar el cursor sobre el enlace */
 }
 body{
-    background-color: #e8e8e8;
+    background: #1E9600;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF0000, #FFF200, #1E9600);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 /*main home*/
 .principal__foto{
@@ -75,9 +78,9 @@ body{
     justify-content: center;
 }
 .partidos img{
-    width: 200px;
-    height: auto;
     display: flex;
+    width: 200px;
+    height: auto; 
 }
 
 /*section home*/
@@ -179,7 +182,6 @@ body{
 .catalogo__social__galerias {
     display: inline-block;
     width: auto; /* Hacer que las imágenes ocupen todo el ancho disponible */
-    max-height: 220px;
 }
 
 
@@ -239,6 +241,12 @@ body{
     text-align: center;
     margin: auto;
 }
+.pie a img{
+    display: flex;
+    text-align: center;
+    width: 100px;
+    height: auto;   
+}
 .pie__redes{
     display: flex;
     align-content: space-around;
@@ -246,17 +254,16 @@ body{
 .pie__redes a img{
     width: 300px;
 }
-.pie a img{
-    display: flex;
-    text-align: center;
-    width: 100px;
-    height: auto;
-    
-}
+
 .pie{
     background-image: url('../imagenes/fondos/rastafriki.jpg');
     background-repeat: initial;
 }
+.pie__logos{
+    display: flex;
+    align-content: space-around;
+}
+
 .pie__logos img{
     display: flex;
     display: inline-block;
@@ -264,10 +271,6 @@ body{
     justify-content: space-between;
     height: 200px;
     
-}
-.pie__logos{
-    display: flex;
-    align-content: space-around;
 }
 
 /* media queries*/
