@@ -48,6 +48,18 @@ body {
   background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+h1 {
+  color: #ffffff;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+h3 {
+  color: #5733FF;
+}
+
 .principal__foto {
   width: 100%;
 }
