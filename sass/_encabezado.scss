@@ -1,4 +1,19 @@
 /* Estilo para el header */
+
+// Definición del mapa de colores para los títulos
+$colores-titulos: (
+  h1: #ffffff,
+  h2: #ffffff,
+  h3: #5733FF
+);
+
+// Iteración sobre el mapa
+@each $titulo, $color in $colores-titulos {
+  #{$titulo} {
+    color: $color;
+  }
+}
+
 .encabezado {
     display: flex;
     align-items: center;

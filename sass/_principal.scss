@@ -4,19 +4,6 @@ body{
     background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-// Definición del mapa de colores para los títulos
-$colores-titulos: (
-  h1: #ffffff,
-  h2: #ffffff,
-  h3: #5733FF
-);
-
-// Iteración sobre el mapa
-@each $titulo, $color in $colores-titulos {
-  #{$titulo} {
-    color: $color;
-  }
-}
 
 
 .principal{
