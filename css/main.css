@@ -60,16 +60,18 @@ body {
   background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .principal__foto {
   width: 100%;
 }
-.principal__titulo {
-  display: flex;
-  justify-content: center;
-}
 .principal__texto {
-  display: flex;
-  justify-content: center;
+  text-align: justify;
+  max-width: 80%;
+  font-size: x-large;
 }
 
 /*aside home*/
@@ -80,11 +82,15 @@ body {
   display: flex;
   justify-content: center;
 }
+.partidos__texto {
+  font-size: medium;
+}
 .partidos img {
-  padding: none;
+  padding: 25px;
   margin: none;
   width: 200px;
   height: auto;
+  padding: 25px;
   width: 200px;
   height: auto;
 }
