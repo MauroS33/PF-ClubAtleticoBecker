@@ -22,6 +22,7 @@
         }
     }
     &__redes{
+        background-image: url(../imagenes/fondos/pasto.jpg);
         display: flex;
         align-content: space-around;
         a{
@@ -37,7 +38,7 @@
             display: inline-block;
             justify-content: space-between;
             margin: auto;
-            height: 210px;
+            max-height: 200px;
         }
     }
 }

@@ -66,7 +66,7 @@ body {
   align-items: center;
 }
 .principal__foto {
-  width: 100%;
+  max-width: 100%;
 }
 .principal__texto {
   text-align: justify;
@@ -151,7 +151,7 @@ body {
   flex-direction: column;
 }
 .carrusel-contenedorcarousel-inner {
-  width: 99%; /* Hacer que el carrusel ocupe todo el ancho disponible */
+  max-width: 99%; /* Hacer que el carrusel ocupe todo el ancho disponible */
 }
 .carrusel-contenedorcarousel-inner img {
   padding: none;
@@ -201,6 +201,7 @@ body {
   display: inline-block;
   width: auto;
   max-height: 250px; /* Mantener la proporción de aspecto */
+  margin-bottom: 1%;
 }
 .catalogo__muestras {
   display: flex;
@@ -260,6 +261,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 3%;
 }
 
 /*footer*/
@@ -288,6 +290,7 @@ body {
   height: auto;
 }
 .pie__redes {
+  background-image: url(../imagenes/fondos/pasto.jpg);
   display: flex;
   align-content: space-around;
 }
@@ -302,7 +305,7 @@ body {
   display: inline-block;
   justify-content: space-between;
   margin: auto;
-  height: 210px;
+  max-height: 200px;
 }
 
 /* media queries*/
