@@ -8,12 +8,17 @@
      display: none;
  }
  /* index */
+ .partidos{
+    flex-direction: column;
+    align-items: center;
+ }
  .partidos__texto{
      display: none;
  }
  /* Indumentaria */
  .catalogo__muestras{
-     display: none;
+     display: flex;
+     flex-direction: column;
  }
 
  .grid-contenedor{ /* sponsors */
@@ -32,6 +37,9 @@
     flex-direction: column;
     align-items: center;
 }
+.planilla img{
+    display: none;
+}
  /* footer */
  .pie__redes a img{
      width: 40px;
@@ -49,8 +57,15 @@
      display: none; /* lo borro porque no da el lugar */
  }
  /* index */
+ .partidos{
+    flex-direction: column;
+    align-items: center;
+.partidos__escudos{
+    display: contents;
+}
+ }
+
  .partidos img{
-     width: 20%;
      display: flex;
  }
  /* Indumentaria */
@@ -76,6 +91,9 @@
 .inscripciones{
     flex-direction: column;
     align-items: center;
+}
+.planilla img{
+    display: none;
 }
 
 /* footer */

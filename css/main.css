@@ -23,7 +23,6 @@ h3 {
   align-items: center;
   background-image: url("../imagenes/fondos/rastafriki.jpg");
   background-repeat: initial;
-  padding: 10px;
 }
 .encabezado__logo {
   width: 200px;
@@ -77,6 +76,13 @@ body {
 /*aside home*/
 .partidos {
   display: flex;
+  align-items: center;
+  padding: 2% 10%;
+}
+.partidos__escudos {
+  display: flex;
+  justify-content: center;
+  display: block;
 }
 .partidos__titulo {
   display: flex;
@@ -90,9 +96,7 @@ body {
   margin: none;
   width: 200px;
   height: auto;
-  padding: 25px;
-  width: 200px;
-  height: auto;
+  padding: 3%;
 }
 
 /*section home*/
@@ -117,7 +121,7 @@ body {
 .goleadores__puestos {
   display: flex;
   justify-content: center;
-  margin-top: 20px; /* Espacio superior para separar del contenido superior */
+  margin: 3%;
 }
 .goleadores__puestos img {
   max-width: 100%; /* Para asegurarse de que las imágenes no excedan su contenedor */
@@ -165,6 +169,10 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.catalogo__muestras {
+  display: flex;
+  justify-content: center;
 }
 .catalogo__juego {
   margin-bottom: 20px; /* Espaciado entre cada sección de galería */
@@ -249,19 +257,32 @@ body {
   grid-column: span 4; /* Las imágenes ocuparán todas las 4 columnas */
 }
 
-.sponsors .tabla tr th {
-  border: 1px solid black;
+/*.sponsors 
+tabla para inscribirse, proyecto para mas aelante
+.tabla{
+     tr{
+        th{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+    }
 }
-.sponsors .tabla tr td {
-  border: 1px solid black;
-}
-
-/* inscribirme */
+*/
+/* inscribirme main*/
 .inscripciones {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 3%;
+}
+
+.planilla {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 /*footer*/
@@ -315,12 +336,17 @@ body {
     display: none;
   }
   /* index */
+  .partidos {
+    flex-direction: column;
+    align-items: center;
+  }
   .partidos__texto {
     display: none;
   }
   /* Indumentaria */
   .catalogo__muestras {
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
   .grid-contenedor { /* sponsors */
     grid-template-columns: 0.5fr 0.5fr;
@@ -331,6 +357,9 @@ body {
   .inscripciones {
     flex-direction: column;
     align-items: center;
+  }
+  .planilla img {
+    display: none;
   }
   /* footer */
   .pie__redes a img {
@@ -348,8 +377,14 @@ body {
     display: none; /* lo borro porque no da el lugar */
   }
   /* index */
+  .partidos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .partidos .partidos__escudos {
+    display: contents;
+  }
   .partidos img {
-    width: 20%;
     display: flex;
   }
   /* Indumentaria */
@@ -366,6 +401,9 @@ body {
   .inscripciones {
     flex-direction: column;
     align-items: center;
+  }
+  .planilla img {
+    display: none;
   }
   /* footer */
   .pie__redes a img {
